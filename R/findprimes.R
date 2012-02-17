@@ -1,0 +1,9 @@
+findprimes<-function(n){
+  p<-c(2)
+  x<-2:n
+  while(length(x)>1){
+    x<-x[!!x%%x[1]]
+    p<-c(p,x[1])}
+  p
+}
+findprimes(1000)
